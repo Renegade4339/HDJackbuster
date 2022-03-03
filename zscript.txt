@@ -90,6 +90,8 @@ if(wp=hdweapon(spawn("ThunderBuster",pos,ALLOW_REPLACE))){
 	}
 	}
 	int battery;
+	int turnamount;
+	double shotspread;
 	bool alt;
 	bool unloaded;
 	
@@ -230,7 +232,7 @@ if(wp=hdweapon(spawn("ThunderBuster",pos,ALLOW_REPLACE))){
 		PLAY E 10 A_FaceTarget(20,20,z_ofs:(alt?0:frandom(10,-60)));
 	shootpb:
 		PLAY E 10{alt=(target&&distance3d(target)<666);}
-		PLAY EFEEFF 3 bright light("PLAZMABX2")A_PlaySound("weapons/plasidle",CHAN_WEAPON);
+		PLAY EFEEFF 3 bright light("PLAZMABX2")A_StartSound("weapons/plasidle",CHAN_WEAPON);
 	shootpb2:
 		PLAY A 0{
 		if(alt)setstatelabel("shootpb2b");
@@ -252,22 +254,22 @@ if(wp=hdweapon(spawn("ThunderBuster",pos,ALLOW_REPLACE))){
 	PLAY E 10;
 	reload:
 		#### A 2 A_HDChase("melee",null,CHF_FLEE);
-		#### A 0 A_PlaySound("weapons/plasopen",CHAN_WEAPON);
+		#### A 0 A_StartSound("weapons/plasopen",CHAN_WEAPON);
 		#### BCD 2 A_HDWander(flags:CHF_FLEE);
 		#### A 2{
 			A_HDWander();
 			if(unloaded==true)return;
 
-			A_PlaySound("weapons/pocket");
+			A_StartSound("weapons/pocket");
 			A_SpawnProjectile("HDCellpackEmpty",38,0,random(90,120));
 				unloaded=true;
 		}
 		#### BCD 2 A_HDWander(flags:CHF_FLEE);
 		#### A 4 A_StartSound("weapons/pocket",9);
 		#### BC 4 A_HDWander(flags:CHF_FLEE);
-		#### E 6 A_PlaySound("weapons/plasload");
+		#### E 6 A_StartSound("weapons/plasload");
 		#### E 2{
-			A_PlaySound("weapons/plasclose");
+			A_StartSound("weapons/plasclose");
 			battery=20;
 			unloaded=false;
 			hdmobai.wander(self,true);
