@@ -1,0 +1,15 @@
+OptionMenu "HDTBJMenu"
+{
+	Title "Jackbuster Options"
+
+	StaticText " "
+	StaticText " "
+	Option "Alt by Distance", "HDTBJ_AltByDistance", "OnOff"
+	StaticText 	"This is for whenever the Jackbuster should rely"
+	StaticText 	"on either by distance or by chance."
+}
+
+AddOptionMenu "OptionsMenu"
+{
+	Submenu "Thunder Buster Jackboots", "HDTBJMenu"
+}
