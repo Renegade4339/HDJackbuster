@@ -1,4 +1,4 @@
-version "4.5.0"
+version "4.7.0"
 
 class HDTBJBHandler : EventHandler
 {
@@ -42,7 +42,7 @@ class HDDeadTBJBHandler : EventHandler
 	}
 	}
 
-class HideousThunderBusterGuy:HDMobMan{
+class HideousThunderBusterGuy:HDHumanoid{
 	default{
 		//$Category "Monsters/Hideous Destructor"
 		//$Title "Thunder Buster Guy"
