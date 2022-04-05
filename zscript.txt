@@ -11,7 +11,7 @@ class HDTBJBHandler : EventHandler
 
 		switch (e.Replacement.GetClassName())
 		{
-			case 'ZombieShotgunner':
+			case 'HideousJackbootReplacer':
 				if (random[mongrand]() <= 64)
 				{
 					e.Replacement = "HDJackbuster";
