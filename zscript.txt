@@ -258,7 +258,7 @@ if(wp=hdweapon(spawn("ThunderBuster",pos,ALLOW_REPLACE))){
 
 	uhohtbisfuckingempty:
 		#### FEEFEFEFEFEEE 2 bright light("PLAZMABX2");
-		---- A 0 setstatelabel("mustreload")
+		---- A 0 setstatelabel("mustreload");
 
 	shootpb2b:
 		PLAY EEEEEEEEEEEEE 2{ A_ThunderZap(); A_StartSound("weapons/plasidle",CHAN_WEAPON);}
