@@ -1,0 +1,26 @@
+jackbuster/sight sounds/jackbuster_sight.ogg
+$random jackbuster/active {jackbuster/active1 jackbuster/active2 jackbuster/active3 jackbuster/active4 jackbuster/active5 jackbuster/active6 jackbuster/active7 jackbuster/active8}
+$random jackbuster/pain {jackbuster/pain1 jackbuster/pain2 jackbuster/pain3 jackbuster/pain4 jackbuster/pain5 jackbuster/pain6}
+$random jackbuster/death {jackbuster/death1 jackbuster/death2 jackbuster/death3 jackbuster/death4 jackbuster/death5}
+
+jackbuster/active1 sounds/jackbuster_active1.ogg
+jackbuster/active2 sounds/jackbuster_active2.ogg
+jackbuster/active3 sounds/jackbuster_active3.ogg
+jackbuster/active4 sounds/jackbuster_active4.ogg
+jackbuster/active5 sounds/jackbuster_active5.ogg
+jackbuster/active6 sounds/jackbuster_active6.ogg
+jackbuster/active7 sounds/jackbuster_active7.ogg
+jackbuster/active8 sounds/jackbuster_active8.ogg
+
+jackbuster/pain1 sounds/jackbuster_pain1.ogg
+jackbuster/pain2 sounds/jackbuster_pain2.ogg
+jackbuster/pain3 sounds/jackbuster_pain3.ogg
+jackbuster/pain4 sounds/jackbuster_pain4.ogg
+jackbuster/pain5 sounds/jackbuster_pain5.ogg
+jackbuster/pain6 sounds/jackbuster_pain6.ogg
+
+jackbuster/death1 sounds/jackbuster_death1.ogg
+jackbuster/death2 sounds/jackbuster_death2.ogg
+jackbuster/death3 sounds/jackbuster_death3.ogg
+jackbuster/death4 sounds/jackbuster_death4.ogg
+jackbuster/death5 sounds/jackbuster_death5.ogg
