@@ -1,24 +1,18 @@
 OptionMenu "HDTBJMenu"
 {
-	Title "Jackbuster Options"
+	Title "$MENU_JACKBUSTER_MENU_TITLE"
 
 	StaticText " "
-	Option "Alt by Distance", "HDTBJ_AltByDistance", "OnOff"
-	StaticText 	"This is for whenever the Jackbuster should rely"
-	StaticText 	"on either by distance or by chance."
+	StaticText "$MENU_JACKBUSTER_NOREGERTS"
 	StaticText " "
-	Option "Limited Battery Reserve System", "HDTBJ_LimitedBatteries", "OnOff"
-	StaticText 	"A new (and probably experimental) system that"
-	StaticText 	"limits the Jackbusters' reserve batteries."
-	StaticText	"All of them will have 5 reserve batteries at"
-	StaticText	"spawn. Per certain amount of tics, referring to"
-	StaticText	"the slider below, they will eventually find a"
-	StaticText	"wild battery, which their charges will vary."
-	StaticText	"They can carry up to 10 of them."
-	Slider "Wild Battery every _ tics","HDTBJ_Tics",0,2100,350,0
+	Option "$MENU_JACKBUSTER_LIMIT", "HDTBJ_LimitedBatteries", "OnOff"
+	StaticText 	"$MENU_JACKBUSTER_LIMIT1","White"
+	StaticText	"$MENU_JACKBUSTER_LIMIT2","White"
+	StaticText	"$MENU_JACKBUSTER_LIMIT3","White"
+	StaticText	"$MENU_JACKBUSTER_LIMIT4","White"
 }
 
-AddOptionMenu "OptionsMenu"
+AddOptionMenu "HDAddonMenu"
 {
-	Submenu "Thunder Buster Jackboots", "HDTBJMenu"
+	Submenu "$MENU_JACKBUSTER", "HDTBJMenu"
 }
