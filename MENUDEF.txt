@@ -1,0 +1,18 @@
+OptionMenu "HDTBJMenu"
+{
+	Title "$MENU_JACKBUSTER_MENU_TITLE"
+
+	StaticText " "
+	StaticText "$MENU_JACKBUSTER_NOREGERTS"
+	StaticText " "
+	Option "$MENU_JACKBUSTER_LIMIT", "HDTBJ_LimitedBatteries", "OnOff"
+	StaticText 	"$MENU_JACKBUSTER_LIMIT1","White"
+	StaticText	"$MENU_JACKBUSTER_LIMIT2","White"
+	StaticText	"$MENU_JACKBUSTER_LIMIT3","White"
+	StaticText	"$MENU_JACKBUSTER_LIMIT4","White"
+}
+
+AddOptionMenu "HDAddonMenu"
+{
+	Submenu "$MENU_JACKBUSTER", "HDTBJMenu"
+}

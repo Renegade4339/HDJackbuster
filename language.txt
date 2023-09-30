@@ -1,0 +1,15 @@
+[en enc eng eni ena enz default]
+
+//low-tier krang.
+TAG_JACKBUSTER="Jackbuster";
+OB_JACKBUSTER="%o was fried by wrath of one of the Tyrant's jack-booted thugs.";
+OB_JACKBUSTER_HIT="%o got %hself krang'd by a jackbuster immediately.";
+
+MENU_JACKBUSTER_MENU_TITLE="Jackbuster Options";
+MENU_JACKBUSTER="Thunder Buster Jackboots";
+MENU_JACKBUSTER_NOREGERTS="I absolutely regret nothing.";
+MENU_JACKBUSTER_LIMIT="Limit Battery Reserves";
+MENU_JACKBUSTER_LIMIT1="Limits the Jackbusters' reserve batteries.";
+MENU_JACKBUSTER_LIMIT2="All of them will have up to 12 reserve batteries per";
+MENU_JACKBUSTER_LIMIT3="individual. They will actively roam around";
+MENU_JACKBUSTER_LIMIT4="and pick up batteries at will.";

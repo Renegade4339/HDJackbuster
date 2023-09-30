@@ -1,0 +1,1 @@
+server bool HDTBJ_LimitedBatteries = false;
