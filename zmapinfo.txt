@@ -1,5 +1,0 @@
-GameInfo
-{
-	AddEventHandlers = "HDTBJBHandler"
-	AddEventHandlers = "HDDeadTBJBHandler"
-}
