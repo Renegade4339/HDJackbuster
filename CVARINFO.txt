@@ -1,3 +1,1 @@
-server bool HDTBJ_AltByDistance = true;
-server int HDTBJ_Tics=350;
 server bool HDTBJ_LimitedBatteries = false;
