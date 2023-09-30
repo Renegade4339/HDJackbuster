@@ -1,0 +1,29 @@
+// ------------------------------------------------------------
+// Jackbuster spawn handler
+// ------------------------------------------------------------
+class HDTBJBHandler : EventHandler
+{
+	override void CheckReplacement(ReplaceEvent e)
+	{
+		if (!e.Replacement)
+		{
+			return;
+		}
+
+		switch (e.Replacement.GetClassName())
+		{
+			case 'HideousJackbootReplacer':
+				if (random[monrand]() <= 64)
+				{
+					e.Replacement = "HDJackbuster";
+				}
+				break;
+			case 'DeadZombieShotgunner':
+				if (random[monrand]() <= 64)
+				{
+					e.Replacement = "DeadJackbuster";
+				}
+				break;
+		}
+	}
+}
